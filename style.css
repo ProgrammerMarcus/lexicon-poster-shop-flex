@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+    background-color: rgb(61, 224, 126);
+    height: 40svh;
+
+    > object {
+        width: 20%;
+    }
+
+    > nav {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+
+        > object {
+            padding: 1em;
+        }
+    }
+
+    > h1 {
+        font-size: 4rem;
+    }
+}
