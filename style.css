@@ -72,6 +72,28 @@ header {
 
     }
 
+    /* Poor chef, the example does not include him */
+    > div:nth-last-child(3) {
+        display: none;
+    }
+
+    > div:nth-last-child(-n + 2) {
+        background-color: white;
+        color: black;
+        width: 333px;
+        height: 500px;
+
+        > a {
+            margin: auto 0 10px 10px;
+            padding: 0.7rem;
+        }
+
+        > p, > span {
+            margin-left: 10px;
+        }
+
+    }
+
 }
 
 footer {
