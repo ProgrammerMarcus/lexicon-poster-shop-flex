@@ -61,7 +61,7 @@ header {
         }
 
         > a {
-            background-color: rgba(232,63,87);
+            background-color: rgba(232, 63, 87);
             padding: 0.5em;
             border-radius: 5px;
             color: white;
@@ -69,7 +69,6 @@ header {
             font-size: 0.8rem;
             margin-top: auto;
         }
-
     }
 
     /* Poor chef, the example does not include him */
@@ -88,16 +87,126 @@ header {
             padding: 0.7rem;
         }
 
-        > p, > span {
+        > p,
+        > span {
             margin-left: 10px;
+        }
+    }
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10% 0 10%;
+    background-color: black;
+
+    > h2 {
+        color: white;
+        width: 100%;
+        text-align: left;
+    }
+
+    > .items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 15px 50px 15px;
+        color: black;
+        width: 100%;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 333px;
+            height: 480px;
+            background-color: white;
+
+            > span {
+                margin: 10px 0 0 10px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            > p {
+                margin: 10px 0 0 10px;
+                font-size: 0.8rem;
+            }
+
+            > img {
+                width: 100%;
+            }
+
+            > a {
+                margin: auto 0 10px 10px;
+                background-color: rgba(232, 63, 87);
+                padding: 0.5em;
+                border-radius: 5px;
+                color: white;
+                text-decoration: none;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .prices {
+        display: flex;
+        width: 100%;
+        color: white;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1337;
+
+            > span:first-of-type {
+                background-color: rgb(52, 8, 9);
+                font-size: 0.8rem;
+                padding: 0.1rem 0;
+            }
+
+            > span {
+                margin-bottom: 0.6rem;
+            }
+
+            > span:last-of-type {
+                padding-bottom: 0.6rem;
+                margin-bottom: 0.6rem;
+                border-bottom: 1px solid gray;
+            }
+
+        }
+
+        > div:last-of-type {
+            flex-grow: 1;
         }
 
     }
 
+    > div:last-of-type {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+    }
+
+    > a {
+        background-color: rgba(232, 63, 87);
+        padding: 0.5em;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+        margin: 40px 0 100px auto;
+        font-weight: bold;
+    }
 }
 
 footer {
-    background-color: rgb(51,51,51);
+    background-color: rgb(51, 51, 51);
     display: flex;
     color: white;
     justify-content: space-around;
@@ -106,7 +215,7 @@ footer {
     > div {
         display: flex;
         flex-direction: column;
-        
+
         > h2 {
             font-size: 1.5rem;
             margin: 0 0 0.4rem 0;
@@ -121,7 +230,5 @@ footer {
             font-size: 0.8rem;
             margin-bottom: 0.2rem;
         }
-
     }
-
 }
