@@ -9,11 +9,7 @@ header {
     place-items: center;
     justify-content: space-between;
     background-color: rgb(61, 224, 126);
-    height: 40svh;
-
-    > object {
-        width: 20%;
-    }
+    height: 40%;
 
     > nav {
         display: flex;
@@ -21,7 +17,7 @@ header {
         width: 100%;
 
         > object {
-            padding: 1em;
+            padding: 24px;
         }
     }
 
@@ -34,8 +30,9 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 60px;
     background-color: black;
+    padding: 60px calc(50vw - (900px/2));
+    gap: 60px 35px;
 
     > div {
         display: flex;
@@ -44,7 +41,7 @@ header {
         width: 222px;
         height: 380px;
         color: white;
-        margin: 15px 15px 50px 15px;
+
 
         > span {
             margin-top: 10px;
@@ -71,7 +68,6 @@ header {
         }
     }
 
-    /* Poor chef, the example does not include him */
     > div:nth-last-child(3) {
         display: none;
     }
@@ -99,7 +95,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 10% 0 10%;
+    padding: 60px calc(50vw - (720px/2));
     background-color: black;
 
     > h2 {
@@ -143,7 +139,7 @@ header {
             > a {
                 margin: auto 0 10px 10px;
                 background-color: rgba(232, 63, 87);
-                padding: 0.5em;
+                padding: 1em;
                 border-radius: 5px;
                 color: white;
                 text-decoration: none;
@@ -177,13 +173,11 @@ header {
                 margin-bottom: 0.6rem;
                 border-bottom: 1px solid gray;
             }
-
         }
 
         > div:last-of-type {
             flex-grow: 1;
         }
-
     }
 
     > div:last-of-type {
